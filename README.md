@@ -4,7 +4,7 @@
 
 <h3>¿Como ingresar al juego?<h3>
   
-Para poder jugar necesitas el siguiente link [http://127.0.0.1:5500/index.html]
+Para poder jugar necesitas el siguiente link http://127.0.0.1:5500/index.html
 
 ![Captura de pantalla (39)](https://github.com/user-attachments/assets/fc95b02b-2b86-4d94-a76e-ec2c893789b4)
 
