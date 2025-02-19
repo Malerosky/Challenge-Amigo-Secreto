@@ -25,37 +25,53 @@
 
 
 
-// Array para almacenar los nombres
+// Variable asignada a un array(lista) para que almacene los nombres ingresados por el usuario en esta
 let nombresUsarios = [];
+
+//Funcion que agrega el nombre entregado por el usario al lista (elemento Html), ademas de comprobar que no se repitan los nombres ni se ingrese un campo vacio 
 function agregarAmigo() {
-    // Obtener el valor del input y limpiar espacios extra
     let nombreAmigoUsuario = document.getElementById('amigo').value.trim();
 
-    // Validar que el input no esté vacío
+    //Verifica si se oprimio el input cuando esta vacio
     if (nombreAmigoUsuario === "") {
-        alert("Por favor, ingresa un nombre.");
+        alert("Por favor, ingresa un nombre");
         return;
     }
 
-    // Agregar el nombre al array
+    // Verificar si el nombre ya está en la lista
+    if (nombresUsarios.includes(nombreAmigoUsuario)) {
+        alert("Ese nombre ya fue ingresado");
+        return;
+    }
+
+    // Agregar el nombre a la lista
     nombresUsarios.push(nombreAmigoUsuario);
-
-    // Actualizar la lista en la interfaz
     actualizarLista();
-
-    // Limpiar el input
     document.getElementById('amigo').value = "";
 }
 
 // Función para actualizar la lista
 function actualizarLista() {
-    let lista = document.querySelector('#listaAmigos');
-    lista.innerHTML = ""; // Limpiar lista
-
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = ""; 
     nombresUsarios.forEach(nombre => {
         let elemento = document.createElement("li");
         elemento.textContent = nombre;
         lista.appendChild(elemento);
     });
+}
+
+
+// Función para sortear un nombre aleatorio mediante el uso de un numero aleatorio que se le asocia la longitud del array de nombres
+function sortearAmigo() {
+    if (nombresUsarios.length === 0) {
+        document.getElementById('resultado').textContent = "No hay nombres en la lista para sortear.";
+        return;
+    }
+
+    let indiceAleatorio = Math.floor(Math.random() * nombresUsarios.length);
+    let nombreSorteado = nombresUsarios[indiceAleatorio];
+
+    document.getElementById('resultado').textContent = "El nombre sorteado es: " + nombreSorteado;
 }
 
