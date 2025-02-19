@@ -3,7 +3,8 @@
 
 
 <h3>¿Como ingresar al juego?<h3>
-Para poder jugar necesitas el siguiente link <a>http://127.0.0.1:5500/index.html</a>
+  
+Para poder jugar necesitas el siguiente link (http://127.0.0.1:5500/index.html)
 
 ![Captura de pantalla (39)](https://github.com/user-attachments/assets/fc95b02b-2b86-4d94-a76e-ec2c893789b4)
 
@@ -23,3 +24,6 @@ Y por ultimo debes darle al boton sortear amigo
 <h3>Finalidad del proyecto</h3>
 Este proyecto tiene la finalidad de poner en practica los conocimientos aprendidos en el curso "principiante en programacion" de Alura. 
 
+
+<h3>Cosas a mejorar</h3>
+Obviamente hay mucho que aprender y mejorar aun, pero para ser mas especifico seria bueno haber incluido una parte en el codigo que solo aceptara nombres reales de pesonas ya que si se pone cualquier palabra el input la acepta como valida.
