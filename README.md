@@ -27,3 +27,6 @@ Este proyecto tiene la finalidad de poner en practica los conocimientos aprendid
 
 <h3>Cosas a mejorar</h3>
 Obviamente hay mucho que aprender y mejorar aun, pero para ser mas especifico seria bueno haber incluido una parte en el codigo que solo aceptara nombres reales de pesonas ya que si se pone cualquier palabra el input la acepta como valida.
+
+<h3>Aclaraciones</h3>
+En el codigo quedaron en forma de texto (bajo el comando //) partes del codigo que intete crear para poder darle funcionalidad a la pagina, pero la verdad es que no tenia las herramientas necesarios por lo que pedi ayuda de chathpt para poder hacer mi codigo. Espero en el futuro poder terminar el codigo como lo tenaia en mente, aun asi lo veo complicado por que durante los cursos no nos enseñaron los comandos para ciertas funcionaliades que eran necesarios para este proyecto, por tanto el hecho de pedir esta ayuda fue totalmente valido.
